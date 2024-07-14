@@ -179,18 +179,25 @@ pub struct SearchResults {
 /// Sentence
 #[derive(Serialize, Deserialize, Debug, PartialEq, Clone)]
 pub struct Sentence {
-    text: String,
-    start: f64,
-    end: f64,
+    #[allow(missing_docs)]
+    pub text: String,
+    #[allow(missing_docs)]
+    pub start: f64,
+    #[allow(missing_docs)]
+    pub end: f64,
 }
 
 /// Paragraph
 #[derive(Serialize, Deserialize, Debug, PartialEq, Clone)]
 pub struct Paragraph {
-    sentences: Vec<Sentence>,
-    num_words: usize,
-    start: f64,
-    end: f64,
+    #[allow(missing_docs)]
+    pub sentences: Vec<Sentence>,
+    #[allow(missing_docs)]
+    pub num_words: usize,
+    #[allow(missing_docs)]
+    pub start: f64,
+    #[allow(missing_docs)]
+    pub end: f64,
 }
 
 /// Paragraph results.
@@ -202,8 +209,10 @@ pub struct Paragraph {
 /// [docs]: https://developers.deepgram.com/docs/paragraphs
 #[derive(Serialize, Deserialize, Debug, PartialEq, Clone)]
 pub struct Paragraphs {
-    transcript: String,
-    paragraphs: Vec<Paragraph>,
+    #[allow(missing_docs)]
+    pub transcript: String,
+    #[allow(missing_docs)]
+    pub paragraphs: Vec<Paragraph>,
 }
 
 /// Entity Detection results.
@@ -283,17 +292,23 @@ pub struct Sentiments {
 /// TopicDetail
 #[derive(Serialize, Deserialize, Debug, PartialEq, Clone)]
 pub struct TopicDetail {
-    topic: String,
-    confidence_score: f64,
+    #[allow(missing_docs)]
+    pub topic: String,
+    #[allow(missing_docs)]
+    pub confidence_score: f64,
 }
 
 /// TopicSegment
 #[derive(Serialize, Deserialize, Debug, PartialEq, Clone)]
 pub struct TopicSegment {
-    text: String,
-    start_word: usize,
-    end_word: usize,
-    topics: Vec<TopicDetail>,
+    #[allow(missing_docs)]
+    pub text: String,
+    #[allow(missing_docs)]
+    pub start_word: usize,
+    #[allow(missing_docs)]
+    pub end_word: usize,
+    #[allow(missing_docs)]
+    pub topics: Vec<TopicDetail>,
 }
 
 /// Topics Detection results.
@@ -305,7 +320,8 @@ pub struct TopicSegment {
 /// [docs]: https://developers.deepgram.com/docs/topic-detection
 #[derive(Serialize, Deserialize, Debug, PartialEq, Clone)]
 pub struct Topics {
-    segments: Vec<TopicSegment>,
+    #[allow(missing_docs)]
+    pub segments: Vec<TopicSegment>,
 }
 
 /// Summary results.
@@ -317,8 +333,10 @@ pub struct Topics {
 /// [docs]: https://developers.deepgram.com/docs/summarization
 #[derive(Serialize, Deserialize, Debug, PartialEq, Clone)]
 pub struct Summary {
-    result: String,
-    short: String,
+    #[allow(missing_docs)]
+    pub result: String,
+    #[allow(missing_docs)]
+    pub short: String,
 }
 
 /// Transcript alternatives.
