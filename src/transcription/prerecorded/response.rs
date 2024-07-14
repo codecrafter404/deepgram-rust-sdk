@@ -198,6 +198,8 @@ pub struct Paragraph {
     pub start: f64,
     #[allow(missing_docs)]
     pub end: f64,
+    #[allow(missing_docs)]
+    pub speaker: Option<usize>,
 }
 
 /// Paragraph results.
